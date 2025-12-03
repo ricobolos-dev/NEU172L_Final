@@ -125,7 +125,8 @@ for p = 1:num_pairs
 
             % Get the channels to fix for this ppt (this information is in the
             % participants.tsv file).
-            chan_to_fix = participants(strcmp(participants.participant_id,num2str(pair,'sub-%02d')),[7,12]);
+            % Columns: 6=player1_pre_processing_channels_fixed, 10=player2_pre_processing_channels_fixed
+            chan_to_fix = participants(strcmp(participants.participant_id,num2str(pair,'sub-%02d')),[6,10]);
             chan_to_fix = table2cell(chan_to_fix(1,ppt));
             if ~isempty(chan_to_fix{1}) % Check if there are channels to fix
 
