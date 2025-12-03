@@ -7,7 +7,9 @@
 %   - We excluded pair 10 (major CMS issues for ppt 2), 23 (no triggers),
 %   and 24 (major CMS issues for ppt 2 - first 32 trials only)
 
-clearvars; clc;
+% Note: 'clearvars' removed to preserve variables when called from RUN_ALL_ANALYSIS
+% If running standalone, uncomment the line below:
+% clearvars; clc;
 
 %% Set the path
 path_to_data = '.';  % FIXED: Data is in current directory

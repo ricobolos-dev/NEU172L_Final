@@ -11,7 +11,9 @@
 %   different channels based on the pair number.
 
 %% Set the path
-clear; close all; clc
+% Note: 'clear' removed to preserve variables when called from RUN_ALL_ANALYSIS
+% If running standalone, uncomment the line below:
+% clear; close all; clc
 
 path_to_data = '.';  % FIXED: Data is in current directory
 path_to_code = '.';
